@@ -1,0 +1,133 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Bitter);
+header, #header {
+    background-color: maroon;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    #logo {
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+    }
+    #word {
+    margin-left: 1px;
+    width: 150px;
+    height: 55px;
+    margin-bottom: 13px;
+    }
+    #home{
+        float: right;
+        display: block;
+        color: white;
+        padding: 27px 20px;
+        text-decoration: none;
+        font-size: 19px;
+    }
+    #searchbar{
+        float: right;
+        padding: 5px;
+        border: none;
+        margin-top: 24px;
+        font-size: 13px;
+        width: 20%;
+    }
+    button {
+        float: right;
+        margin-top: 23px;
+        font-size: 18px;
+        margin-right: 2%;
+    }
+    .icon-bar {
+        width: 100%;
+        background-color: maroon;
+        overflow: auto;
+    }
+    html {
+        box-sizing: border-box;
+        }
+*,
+*:before,
+*:after {
+box-sizing: inherit;
+}
+
+a,
+a:visited {
+color: #76b7f7;
+}
+
+body {
+background-color: #fff;
+color: #fff;
+font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-family: "Bitter", serif;
+}
+
+body {
+display: grid;
+grid-template-rows: 1fr 50px;
+justify-items: center;
+align-items: center;
+perspective: 2000px;
+}
+
+.deck {
+display: flex;
+margin-top: 40%;
+}
+
+.card-space:hover .card {
+transform: rotateY(-180deg);
+}
+
+.card {
+border-radius: 10px;
+height: 610px;
+margin: 30px;
+width: 550px;
+position: relative;
+transform-style: preserve-3d;
+transition: all 0.5s ease;
+font-size: 25px;
+}
+.card h1 {
+margin-top: 5px;
+}
+.card p {
+margin-top: 0px;
+}
+
+.face {
+border-radius: 10px;
+box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
+background-color: rgb(143, 3, 3);
+padding: 20px;
+position: absolute;
+height: 100%;
+width: 100%;
+}
+.face h1 {
+padding: 0;
+}
+.face.front {
+text-align: center;
+z-index: 20;
+-webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+transform: rotateY(0deg);
+}
+.face.back {
+transform: rotateY(180deg);
+-webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}

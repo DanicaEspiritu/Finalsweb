@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Alma Mater- Home</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/img">
+        <style>
+            #header{
+                background-color: maroon;
+                border-width: 100%;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            #logo{
+                height: 80px;
+                width: 80px;
+                margin-left: 50px;
+            }
+            #word{
+                margin-left: 1px;
+                width: 150px;
+                height: 55px;
+                margin-bottom: 13px;
+            }
+            #background{
+                width: 100%;
+                height: 60%;
+            }
+            h1{
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                margin-left: 70px;
+            }
+            #home{
+                float: right;
+                display: block;
+                color: white;
+                padding: 27px 20px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            #searchbar{
+                float: right;
+                padding: 5px;
+                border: none;
+                margin-top: 24px;
+                font-size: 13px;
+                width: 20%;
+            }
+            button {
+                float: right;
+                margin-top: 23px;
+                font-size: 18px;
+                margin-right: 2%;
+            }
+            body {
+                margin-bottom:11%;
+            }
+            .icon-bar {
+                width: 100%;
+                background-color: maroon;
+                overflow: auto;
+            }
+            
+            body {
+                margin: 0 0 65px 0;
+            }
+
+            .nav {
+                float: right;
+                position: inherit;
+                bottom: 0;
+                width: 100%;
+                height: 55px;
+                box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+                background-color: maroon;
+                display: flex;
+                overflow-x: auto;
+                height: 95px;
+            }
+
+            .nav__link {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                flex-grow: 1;
+                min-width: 50px;
+                overflow: hidden;
+                white-space: nowrap;
+                font-family: sans-serif;
+                font-size: 35px;
+                color: #ffff;
+                text-decoration: none;
+                -webkit-tap-highlight-color: transparent;
+                transition: background-color 0.1s ease-in-out;
+            }
+
+            .nav__link:hover {
+                background-color: #eeeeee;
+                color: #000;
+            }
+
+            .nav__text {
+                font-size: 16px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+            <img src="img/BCNHS logo.png" alt="BCNHS Logo" id="logo">
+            <img src="img/BCNHS.PNG" alt="bcnhs" id="word">
+            
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <input type="text" placeholder="Search.." id="searchbar">
+            <a href="index.html" id="home">Home</a>
+        </div>
+
+        <h1>Welcome to Baguio City National High School!</h1>
+        
+        <div>
+            <img src="img/School img.jpg" alt="school img" id="background">
+        </div>
+
+        <nav class="nav">
+            <a href="Page2.html" class="nav__link">
+              <i class="fa fa-user-circle"></i>
+              <span class="nav__text">Login</span>
+            </a>
+            <a href="Page3.html" class="nav__link">
+              <i class="fa fa-image"></i>
+              <span class="nav__text">Gallery</span>
+            </a>
+            <a href="Page4.html" class="nav__link">
+              <i class="fa fa-university"></i>
+              <span class="nav__text">Mission & Vission</span>
+            </a>
+            <a href="Page5.html" class="nav__link">
+              <i class="fa fa-globe"></i>
+              <span class="nav__text">History</span>
+            </a>
+            <a href="Page6.html" class="nav__link">
+              <i class="fa fa-phone"></i>
+              <span class="nav__text">Contact Us</span>
+            </a>
+          </nav>
+
+    </body>
+</html>
